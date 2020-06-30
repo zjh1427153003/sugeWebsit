@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+			<div class="bread">
+				<div class="b-box">
+					<h5>
+					<a href="index.html">首页</a>
+					<span> > </span>
+					<a href="###">国际海运</a>
+					<span> > </span>
+					<a class="red" href="###">OOG & 特种柜</a>
+				</h5>
+				</div>
+			</div>
+
+			<div class="og-floor1">
+				<div class="og-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>业务范围</h4>
+					<ul class="clearfix">
+						<li>
+							<h5><p>项目物流</p><span>1</span></h5>
+							<p class="en">project cargo solution</p>
+							<p>为您的货物量身打造综合物流运 输方案
+							</p>
+						</li>
+						<li>
+							<h5><p>项目物流</p><span>2</span></h5>
+							<p class="en">project cargo solution</p>
+							<p>为您的货物量身打造综合物流运 输方案
+							</p>
+						</li>
+						<li>
+							<h5><p>项目物流</p><span>3</span></h5>
+							<p class="en">project cargo solution</p>
+							<p>为您的货物量身打造综合物流运 输方案
+							</p>
+						</li>
+						<li>
+							<h5><p>项目物流</p><span>4</span></h5>
+							<p class="en">project cargo solution</p>
+							<p>为您的货物量身打造综合物流运 输方案
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="og-floor2">
+				<div class="og-box clearfix" aos="fade-up">
+					<p class="line"></p>
+					<h4>服务优势</h4>
+					<div class="lef"><img src="images/ogpic_03.jpg" /></div>
+					<ul>
+						<li>
+							<h5>特种柜服务优势<span>01</span></h5>
+							<p>专业铸就高质量，服务造就高口碑，速格全心全意为您服务!</p>
+						</li>
+						<li>
+							<h5>优势航线<span>02</span></h5>
+							<p>欧洲地中海线 ---长期合约运价，优势内陆点代理服务。</p>
+						</li>
+						<li>
+							<h5>可视化物流追踪<span>03</span></h5>
+							<p>拥有合理、公正的货代报价机制，无中间环节，客户直接受益，整体方案落地可行，规避虚高报价陷阱。</p>
+						</li>
+						<li>
+							<h5>系统化专业服务<span>04</span></h5>
+							<p>以客户需求为导向，量身定制安全高效的货代解决方案。</p>
+						</li>
+						<li>
+							<h5>可视化物流追踪<span>05</span></h5>
+							<p>全程定位追踪，精准精准定位货物位置，层层监控物流环节。</p>
+						</li>
+						<li>
+							<h5>现代化管理团队<span>06</span></h5>
+							<p>队伍专业化、管理现代化、服务人性化，全天候客服团队。</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="og-floor3">
+				<div class="og-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>载重及负荷</h4>
+					<div class="list">
+						<h5>特种柜超重及时载重负荷</h5>
+						<div class="biao">
+							<img src="images/biao_04_03.png" />
+						</div>
+					</div>
+
+					<ul>
+						<li>
+							<h5>二十呎全高開頂貨櫃 <span class="fa fa-angle-right"></span></h5>
+							<div class="list2 clearfix">
+								<div class="list-lef">
+									<h6>外部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>20'-0"</p>
+											<p>6.058 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>8'-0"</p>
+											<p>2.438 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>8'-6"</p>
+											<p>2.591 m</p>
+										</div>
+									</div>
+																		
+									<h6>內部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>19'-4"</p>
+											<p>5.898 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>7'9"</p>
+											<p>2.352 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>7'8"</p>
+											<p>2.348 m</p>
+										</div>
+									</div>
+									
+									<h6>重量限制</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">總重</p>
+											<p>52,910 lb</p>
+											<p>24,000 kg</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">空櫃重</p>
+											<p>5,310 lb</p>
+											<p>2,410 kg</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">貨物淨重</p>
+											<p>47,600 lb</p>
+											<p>21,590 kg</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-rig">
+									<div class="pic"><img src="images/box0_03.jpg"/></div>
+								</div>
+
+								<div class="list-down">
+									<div class="nr">
+										<p class="blue">內容積 ( 立方米 )</p>
+										<p>32.5</p>
+									</div>
+									<div class="nr1">
+										<p class="blue">內容積 ( 立方呎 )</p>
+										<p>1148</p>
+									</div>
+								</div>
+								<h6 class="blue">附註</h6>
+								<h6>上述資料僅供參考，實際尺寸及重量應以各櫃櫃體所標示者為準。</h6>
+							</div>
+						</li>
+						<li>
+							<h5>四十呎超高開頂貨櫃 <span class="fa fa-angle-right"></span></h5>
+							<div class="list2 clearfix">
+								<div class="list-lef">
+									<h6>外部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>20'-0"</p>
+											<p>6.058 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>8'-0"</p>
+											<p>2.438 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>8'-6"</p>
+											<p>2.591 m</p>
+										</div>
+									</div>
+																		
+									<h6>內部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>19'-4"</p>
+											<p>5.898 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>7'9"</p>
+											<p>2.352 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>7'8"</p>
+											<p>2.348 m</p>
+										</div>
+									</div>
+									
+									<h6>重量限制</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">總重</p>
+											<p>52,910 lb</p>
+											<p>24,000 kg</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">空櫃重</p>
+											<p>5,310 lb</p>
+											<p>2,410 kg</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">貨物淨重</p>
+											<p>47,600 lb</p>
+											<p>21,590 kg</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-rig">
+									<div class="pic"><img src="images/box0_03.jpg"/></div>
+								</div>
+								<div class="list-down">
+									<div class="nr">
+										<p class="blue">內容積 ( 立方米 )</p>
+										<p>32.5</p>
+									</div>
+									<div class="nr1">
+										<p class="blue">內容積 ( 立方呎 )</p>
+										<p>1148</p>
+									</div>
+								</div>
+								<h6 class="blue">附註</h6>
+								<h6>上述資料僅供參考，實際尺寸及重量應以各櫃櫃體所標示者為準。</h6>
+							</div>
+						</li>
+						<li>
+							<h5>四十呎超高開頂貨櫃 <span class="fa fa-angle-right"></span></h5>
+							<div class="list2 clearfix">
+								<div class="list-lef">
+									<h6>外部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>20'-0"</p>
+											<p>6.058 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>8'-0"</p>
+											<p>2.438 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>8'-6"</p>
+											<p>2.591 m</p>
+										</div>
+									</div>
+																		
+									<h6>內部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>19'-4"</p>
+											<p>5.898 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>7'9"</p>
+											<p>2.352 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>7'8"</p>
+											<p>2.348 m</p>
+										</div>
+									</div>
+									
+									<h6>重量限制</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">總重</p>
+											<p>52,910 lb</p>
+											<p>24,000 kg</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">空櫃重</p>
+											<p>5,310 lb</p>
+											<p>2,410 kg</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">貨物淨重</p>
+											<p>47,600 lb</p>
+											<p>21,590 kg</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-rig">
+									<div class="pic"><img src="images/box0_03.jpg"/></div>
+								</div>
+								<div class="list-down">
+									<div class="nr">
+										<p class="blue">內容積 ( 立方米 )</p>
+										<p>32.5</p>
+									</div>
+									<div class="nr1">
+										<p class="blue">內容積 ( 立方呎 )</p>
+										<p>1148</p>
+									</div>
+								</div>
+								<h6 class="blue">附註</h6>
+								<h6>上述資料僅供參考，實際尺寸及重量應以各櫃櫃體所標示者為準。</h6>
+							</div>
+						</li>
+						<li>
+							<h5>二十呎前後板框可折疊式之床式、平台兩用貨櫃 <span class="fa fa-angle-right"></span></h5>
+							<div class="list2 clearfix">
+								<div class="list-lef">
+									<h6>外部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>20'-0"</p>
+											<p>6.058 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>8'-0"</p>
+											<p>2.438 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>8'-6"</p>
+											<p>2.591 m</p>
+										</div>
+									</div>
+																		
+									<h6>內部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>19'-4"</p>
+											<p>5.898 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>7'9"</p>
+											<p>2.352 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>7'8"</p>
+											<p>2.348 m</p>
+										</div>
+									</div>
+									
+									<h6>重量限制</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">總重</p>
+											<p>52,910 lb</p>
+											<p>24,000 kg</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">空櫃重</p>
+											<p>5,310 lb</p>
+											<p>2,410 kg</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">貨物淨重</p>
+											<p>47,600 lb</p>
+											<p>21,590 kg</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-rig">
+									<div class="pic"><img src="images/box0_03.jpg"/></div>
+								</div>
+								<div class="list-down">
+									<div class="nr">
+										<p class="blue">內容積 ( 立方米 )</p>
+										<p>32.5</p>
+									</div>
+									<div class="nr1">
+										<p class="blue">內容積 ( 立方呎 )</p>
+										<p>1148</p>
+									</div>
+								</div>
+								<h6 class="blue">附註</h6>
+								<h6>上述資料僅供參考，實際尺寸及重量應以各櫃櫃體所標示者為準。</h6>
+							</div>
+						</li>
+						<li>
+							<h5>四十呎前後板框可折疊式之床式、平台兩用貨櫃 <span class="fa fa-angle-right"></span></h5>
+							<div class="list2 clearfix">
+								<div class="list-lef">
+									<h6>外部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>20'-0"</p>
+											<p>6.058 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>8'-0"</p>
+											<p>2.438 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>8'-6"</p>
+											<p>2.591 m</p>
+										</div>
+									</div>
+																		
+									<h6>內部尺寸</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">长</p>
+											<p>19'-4"</p>
+											<p>5.898 m</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">宽</p>
+											<p>7'9"</p>
+											<p>2.352 m</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">高</p>
+											<p>7'8"</p>
+											<p>2.348 m</p>
+										</div>
+									</div>
+									
+									<h6>重量限制</h6>
+									<div class="lef1">
+										<div class="chang">
+											<p class="yellow">總重</p>
+											<p>52,910 lb</p>
+											<p>24,000 kg</p>
+										</div>
+										<div class="kuan">
+											<p class="yellow">空櫃重</p>
+											<p>5,310 lb</p>
+											<p>2,410 kg</p>
+										</div>
+										<div class="gao">
+											<p class="yellow">貨物淨重</p>
+											<p>47,600 lb</p>
+											<p>21,590 kg</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-rig">
+									<div class="pic"><img src="images/box0_03.jpg"/></div>
+								</div>
+								<div class="list-down">
+									<div class="nr">
+										<p class="blue">內容積 ( 立方米 )</p>
+										<p>32.5</p>
+									</div>
+									<div class="nr1">
+										<p class="blue">內容積 ( 立方呎 )</p>
+										<p>1148</p>
+									</div>
+								</div>
+								<h6 class="blue">附註</h6>
+								<h6>上述資料僅供參考，實際尺寸及重量應以各櫃櫃體所標示者為準。</h6>
+							</div>
+						</li>
+					</ul>
+					<script>
+						$("li").click(function() {
+							$(this).find(".list2").slideToggle();
+							$(this).toggleClass("blue");
+							$(this).toggleClass("rotate");
+						})
+					</script>
+				</div>
+			</div>
+
+			<div class="og-floor4">
+				<div class="og-box clearfix" aos="fade-up">
+					<p class="line"></p>
+					<h4>适用产品</h4>
+
+					<div class="lef"><img src="images/cyj_03.jpg" /></div>
+					<div class="rig">
+						<div class="jst">
+							<div class="swiper-container swiperx">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<ul class="clearfix">
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+										</ul>
+									</div>
+									<div class="swiper-slide">
+										<ul class="clearfix">
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+											<li>救生艇</li>
+										</ul>
+									</div>
+								</div>							
+								<div class="swiper-button-next">
+									<span class="fa fa-angle-right"></span>
+								</div>
+							</div>
+
+							<script>
+								var swiper = new Swiper('.swiperx', {
+									pagination: '.swiper-pagination',
+									paginationClickable: true,
+									slidesPerView: 1,
+									spaceBetween: 30,
+									loop: true,
+									navigation: {
+										nextEl: '.swiper-button-next',
+										prevEl: '.swiper-button-prev',
+									},
+								});
+							</script>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="og-floor5">
+				<div class="og-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>价格因素</h4>
+					<p class="line1"></p>
+					<ul class="clearfix">
+						<li>
+							<p>货物尺寸</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>箱源情况</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>是否中转</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>货物重量</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>码头吊机</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>是否母船</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>普柜运价</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>最终港口</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+						<li>
+							<p>舱位情况</p>
+							<div class="round"></div>
+							<span class="line2"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>

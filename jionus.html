@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+			<div class="bread">
+				<div class="b-box">
+					<h5>
+					<a href="index.html">首页</a>
+					<span> > </span>
+					<a class="red" href="###">加入我们</a>
+				</h5>
+				</div>
+			</div>
+
+			<div class="ju-box">
+
+				<div class="ju-floor1">
+					<h3><span class="line"></span>人才理念</h3>
+					<h4>人,是企业成功的最关键因素</h4>
+					<p>我们乐意与对未知拥有极强探索欲、能快速接受并学习新事物、对感兴趣的事情能大胆尝试的人共事,我们相信一个简单、 热情且善于沟通的人总是充满了无限 能量和可能。为了支持员工的业务提升和职业发展, 我们通过工作指派和各种各样的培训及发展计划,向每一位员工提供广泛的机会去实现他们的潜力。</p>
+					<h4>相信未来，拥抱变化</h4>
+					<p>员工是企业发展的基础，企业是员工发挥的舞台。无论什么样的企业都是离不开员工的组成。员工没有企业也没有展示自己能力的舞台。所以两者是相辅相成。</p>
+				</div>
+
+				<div class="ju-floor2">
+					<h3><span class="line"></span>加入我们</h3>
+					<div class="ju-no1 biao">
+						<p>职位</p>
+						<p>所属部门</p>
+						<p>要求</p>
+						<p>工作经验</p>
+						<p>工作地点</p>
+					</div>
+					<div class="ju-no2 biao">
+						<p>销售</p>
+						<p>销售部</p>
+						<p>相关工作经验</p>
+						<p>1年以上</p>
+						<p>浦东新区</p>
+					</div>
+					<div class="ju-no3 biao">
+						<p>操作</p>
+						<p>操作部</p>
+						<p>相关工作经验</p>
+						<p>5年以上</p>
+						<p>普陀区</p>
+					</div>
+					<div class="ju-no4 biao">
+						<p>单证</p>
+						<p>操作部</p>
+						<p>相关工作经验</p>
+						<p>无要求</p>
+						<p>普陀区</p>
+					</div>
+					<div class="ju-no5 biao">
+						<p>职位</p>
+						<p>所属部门</p>
+						<p>相关工作经验</p>
+						<p>无要求</p>
+						<p>浦东新区</p>
+					</div>
+				</div>
+
+				<div class="ju-floor3">
+					<h3><span class="line"></span>福利待遇</h3>
+					<ul class="clearfix">
+						<li>
+							<img src="images/ju1.png" />
+							<p class="line"></p>
+							<p>五险一金</p>
+						</li>
+						<li>
+							<img src="images/ju2.png" />
+							<p class="line"></p>
+							<p>带薪年假</p>
+						</li>
+						<li>
+							<img src="images/ju3.png" />
+							<p class="line"></p>
+							<p>节日福利</p>
+						</li>
+						<li>
+							<img src="images/ju4.png" />
+							<p class="line"></p>
+							<p>生日福利</p>
+						</li>
+						<li>
+							<img src="images/ju5.png" />
+							<p class="line"></p>
+							<p>国内旅游</p>
+						</li>
+						<li>
+							<img src="images/ju6.png" />
+							<p class="line"></p>
+							<p>职业培训</p>
+						</li>
+						<li>
+							<img src="images/ju7.png" />
+							<p class="line"></p>
+							<p>绩效工资</p>
+						</li>
+						<li>
+							<img src="images/ju8.png" />
+							<p class="line"></p>
+							<p>年终分红</p>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>

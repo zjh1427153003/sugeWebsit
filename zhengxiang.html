@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+
+			<div class="bread">
+				<div class="b-box">
+					<h5>
+					<a href="index.html">首页</a>
+					<span> > </span>
+					<a class="red" href="###">国际海运</a>
+					<span> > </span>
+					<a class="red" href="###">整箱&拼箱</a>
+				</h5>
+				</div>
+			</div>
+			
+			
+			<div class="zx-floor1">
+				<div class="zx-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>国际海运整箱（FCL)</h4>
+					
+					<div class="lr clearfix">
+						<div class="lef">
+							<p class="line1"></p>
+							<h5>海运整箱（FCL)</h5>
+							<h6>简单迅速的灵活性+您需要高可靠性</h6>
+							<p>SURGIOR在集装箱整装服务确保在全球范围内提供可靠、安全、经
+济的门到门运输。我们使用各种类型的设备，为各种商品提供量身
+定制的解决方案。</p>
+						</div>
+						<div class="rig"><img src="images/px_03.png"/></div>					
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="zx-floor2">
+				<div class="zx-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>国际海运拼箱（FCL)</h4>
+					<p class="ltxt">全球 LCL 网络中，有超230 多合作代理，每周固定船次直航进出所有主要港口和内陆点。我们拥有专注于主要行业领域的物流专家，</p>
+					<p class="ltxt">
+因此，我们能帮您改善业绩和降低成本。由我们自己的网络专家提供端到端管理，确保客户供应链具有预测性，并保证交期及兑现对最终客户的许诺。</p>
+					
+					<ul class="clearfix">
+						<li>
+							<img src="images/px_07.jpg"/>
+							<div class="li-txt">
+								<h5>LCL</h5>
+								<p class="line2"></p>
+								<p>在全球各大集装箱港口都制定有舱位保护计划</p>								
+							</div>
+						</li>
+						<li>
+							<img src="images/px_09.png"/>
+							<div class="li-txt">
+								<h5>LCL</h5>
+								<p class="line2"></p>
+								<p>在所有地点的仓库里处理和检查货物</p>								
+							</div>
+						</li>
+						<li>
+							<img src="images/px_07.jpg"/>
+							<div class="li-txt">
+								<h5>LCL</h5>
+								<p class="line2"></p>
+								<p>安排有序且保障有力 -“预订即运出”</p>								
+							</div>
+						</li>
+						<li>
+							<img src="images/px_09.png"/>
+							<div class="li-txt">
+								<h5>LCL</h5>
+								<p class="line2"></p>
+								<p>从装运到抵达的整个流程监控集装箱</p>								
+							</div>
+						</li>
+						<li>
+							<img src="images/px_07.jpg"/>
+							<div class="li-txt">
+								<h5>LCL</h5>
+								<p class="line2"></p>
+								<p>可在互联网上全天候查询所有货运和订单</p>								
+							</div>
+						</li>
+					</ul>
+					
+					
+					
+				</div>
+			</div>
+			
+			<div class="zx-floor3">
+				<div class="zx-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>国际海运优势</h4>
+					<p class="ltxt">始终将客户的需求放在首位，提供更精细全面的国际海运服务</p>
+					
+					<ul class="clearfix no1">
+						<li>
+							<img src="images/zxicon_03.png"/>
+							<p class="line2"></p>
+							<p>遍布全球的直拼点与密集稳定的船期</p>
+						</li>
+						<li>
+							<img src="images/zxicon_03.png"/>
+							<p class="line2"></p>
+							<p>透明的报价体系和公正的目的地港收费标准</p>
+						</li>
+						<li>
+							<img src="images/zxicon_03.png"/>
+							<p class="line2"></p>
+							<p>在重要港口拥有现代化的合作仓库</p>
+						</li>
+						<li>
+							<img src="images/zxicon_03.png"/>
+							<p class="line2"></p>
+							<p>提供24小时货物在线跟踪查询服务</p>
+						</li>
+					</ul>
+					
+					<ul class="clearfix no2">
+						<li>
+							<p class="num">01</p>
+							<h5>advantage</h5>
+							<p class="line3"></p>
+							<h3>迅速的门点及内陆运输服务</h3>
+							<p>设有常驻门点，灵活配置资源，压缩时间与成本，现代化物流体系，满足内陆货物运输的需求</p>
+						</li>
+						<li>
+							<p class="num">02</p>
+							<h5>advantage</h5>
+							<p class="line3"></p>
+							<h3>专业报关公司，提供多种特殊通关公司</h3>
+							<p>专有驻点报关点，通关能力强，速度快捷高效，提供多选择的优化进口清关方案</p>
+						</li>
+						<li>
+							<p class="num">03</p>
+							<h5>advantage</h5>
+							<p class="line3"></p>
+							<h3>自营拼箱仓库储备空间大</h3>
+							<p>仓库占地面积12万平方米，拥有健全的内装箱拼箱仓库服务体系和规范化服务流程</p>
+						</li>
+						<li>
+							<p class="num">04</p>
+							<h5>advantage</h5>
+							<p class="line3"></p>
+							<h3>一站式运输保险解决方案</h3>
+							<p>与多家保险企业合作，货运险承保范围覆盖全球，全称提供一对一专属服务 </p>
+						</li>
+					</ul>
+					
+					
+				</div>
+			</div>
+			
+			<div class="zx-floor4">
+				<div class="zx-box" aos="fade-up">
+					<p class="line"></p>
+					<h4>国际海运流程</h4>
+									
+					<ul class="clearfix">
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+						</li>
+					</ul>
+					
+					<ul class="clearfix">
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+							<span><img src="images/ckjt_03.png"/></span>
+						</li>
+						<li>
+							<div class="icon ico1"></div>
+							<p class="line1"></p>
+							<p>接单</p>
+						</li>
+					</ul>
+					
+					
+					
+				</div>				
+			</div>
+			
+			
+			
+			<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>

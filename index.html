@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>								
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+
+			<div class="floor1 clearfix" aos="fade-left">
+				<div class="f1-lef">
+					<div class="swiper-container swiperx">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/ban2_02.jpg" /></div>
+							<div class="swiper-slide"><img src="images/index_06.jpg" /></div>
+							<div class="swiper-slide"><img src="images/ban2_02.jpg" /></div>
+							<div class="swiper-slide"><img src="images/index_06.jpg" /></div>
+
+						</div>
+
+						<!-- Add Pagination -->
+
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev">
+							<img src="images/sad3.png" />
+						</div>
+						<div class="swiper-button-next">
+							<img src="images/sad_03.png" />
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+
+				</div>
+				<div class="f1-rig">
+					<h5>SURGIOR</h5>
+					<p class="line"></p>
+					<h3>提供增值服务</h3>
+					<h4>为客户量身定制专业的物流服务</h4>
+					<a href="zengzhi.html">查看更多</a>
+				</div>
+
+				<script>
+					var swiper = new Swiper('.swiperx', {
+						loop: true,
+						effect: 'fade',
+						slidesPerView: 1,
+						spaceBetween: 10,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+
+						on: {
+
+							init: function() {
+								numList = '<ul>';
+								for(p = 1; p <= (this.slides.length); p++) {
+									numList += '<li>' + 0 + p + '</li>';
+								}
+								numList += '</ul>';
+								this.$el.find('.swiper-pagination').html(numList + '<i><font></font></i>0<span class="total">' + (this.slides.length - 2) + '</span>');
+								//paginationRender会每次更新dom，无法产生动画效果,所以使用html()生成pagination
+								this.emit('transitionStart');
+							},
+							transitionStart: function() {
+								realIndex = this.realIndex;
+								speed = this.params.speed;
+								bullets = this.$el.find('.swiper-pagination li');
+								lines = this.$el.find('.swiper-pagination i font');
+								sldieLength = bullets.length;
+								for(i = 0; i < sldieLength; i++) {
+									if((i - realIndex) > Math.floor(sldieLength / 2)) {
+										difference = i - sldieLength - realIndex;
+									} else if((i - realIndex) < -Math.floor(sldieLength / 2)) {
+										difference = i + sldieLength - realIndex;
+									} else {
+										difference = i - realIndex;
+									}
+									var th = this.realIndex + 1
+									var leng = th * 15
+									bullets.eq(i).transition(speed);
+									lines.css('width', leng + "px")
+									console.log(leng)
+									bullets.eq(i).css({
+										opacity: 0
+									})
+									bullets.eq(i).css('opacity', 1 - Math.abs(difference));
+								}
+							}
+						}
+					});
+				</script>
+			</div>
+
+			<div class="floor2 clearfix" aos="fade-left">
+				<div class="f2-lef">
+					<img src="images/bj_06.jpg" />
+					<div class="txt">
+						<p class="line"></p>
+						<h5>速格，物流界的万事屋</h5>
+						<p>
+							在当今的电子商务时代，全球物流产业有了新的发展趋势。 现代物流服务的核心目标是在物流全过程中以最小的综合 成本来满足顾客的需求。
+						</p>
+					</div>
+				</div>
+				<div class="f2-rig">
+					<link rel="stylesheet" type="text/css" href="css/plyr.css" />
+					<script type="text/javascript" src="js/plyr.js"></script>
+					<div class="m">
+						<video loop="loop" poster="">
+							<!--播放器-->
+							<source src="images/sp.mp4" type="video/mp4">
+							<!--视频地址-->
+						</video>
+					</div>
+					<script>
+						/*****启动******/
+						plyr.setup();
+					</script>
+
+				</div>
+			</div>
+
+			<div class="floor3" aos="fade-left">
+				<h5>项目服务</h5>
+				<p class="line"></p>
+				<ul class="clearfix">
+					<li class="no1">
+						<a href="jinkou.html">
+							<p class="iconbox"></p>
+							<h5>进口代理</h5>
+							<p class="li-line"></p>
+							<p>
+								代理进口, 包括：进口付汇；进口办证等相关服务。 进口代开信用证, 接受TT、D/P等其他结算方式。代 理、代办进料加工……
+							</p>
+						</a>
+					</li>
+					<li class="no2">
+						<a href="chukou.html">
+							<p class="iconbox"></p>
+							<h5>出口代理</h5>
+							<p class="li-line"></p>
+							<p>
+								代理出口，包括：出口收汇；出口办证等相关服务。 出口代收信用证，接受TT、L/P等其他结算方式。代 理客户办理出口核……
+							</p>
+						</a>
+					</li>
+					<li class="no3">
+						<a href="###">
+							<p class="iconbox"></p>
+							<h5>证件办理</h5>
+							<p class="li-line"></p>
+							<p>
+								进口配额、自动进口许可证、重要工业品登记证明 、机电产品进口登记证明、进出口商检证明、进口 食品检验检疫证明……
+							</p>
+						</a>
+					</li>
+					<li class="no4">
+						<a href="###">
+							<p class="iconbox"></p>
+							<h5>文件下载</h5>
+							<p class="li-line"></p>
+							<p>
+								各类产品进口、办理进口证明可许可证件、审 核制作进口单据代理进口、进口付汇等相关服 务代理……
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="floor4 clearfix" aos="fade-left">
+				<h5>新闻资讯</h5>
+				<p class="line"></p>
+
+				<a href="###" class="f4-lef">
+					<img class="bg" src="images/bj2_02.jpg" />
+
+					<p>NEWS <span><img src="images/rigicon_03.png"/></span></p>
+
+				</a>
+
+				<div class="f4-rig">
+					<ul>
+						<li>
+							<a href="###">
+								<span>2019.5.31</span> 中国西部现代物流港物流信息公共平台旨在为用户提效……
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span>2019.5.30</span> 物流资讯、最新资讯、国际海运、国际贸易、跨境电商……
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span>2019.5.30</span> 为了帮助大家更好的了解北京地区仓储市场情况，物流……
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span>2019.5.31</span> 近日,国家发展改革委、中国与物流采购联合会发布了有……
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span>2019.5.31</span> 中国西部现代物流港物流信息公共平台旨在为用户提效……
+							</a>
+						</li>
+					</ul>
+
+					<a class="more" href="###">查看更多</a>
+				</div>
+
+			</div>
+
+			<div class="floor5" aos="fade-left">
+				<h5>出口案例</h5>
+				<p class="line"></p>
+
+				<div class="f5-case">
+					<div class="swiper-container swipery">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<ul class="clearfix">
+									<li>
+										<a href="###"><img src="images/case_02.jpg" /></a>
+										<p>板材出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_04.jpg" /></a>
+										<p>大豆粉末出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_06.jpg" /></a>
+										<p>搅拌机出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_08.jpg" /></a>
+										<p>机械出口代理</p>
+									</li>
+								</ul>
+							</div>
+							<div class="swiper-slide">
+								<ul class="clearfix">
+									<li>
+										<a href="###"><img src="images/case_02.jpg" /></a>
+										<p>板材出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_04.jpg" /></a>
+										<p>大豆粉末出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_06.jpg" /></a>
+										<p>搅拌机出口代理</p>
+									</li>
+									<li>
+										<a href="###"><img src="images/case_08.jpg" /></a>
+										<p>机械出口代理</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="swiper-button-next"><img src="images/totop_03.png" /></div>
+						<div class="swiper-button-prev"><img src="images/todown_03.png" /></div>
+
+					</div>
+					<script>
+						var swiper = new Swiper('.swipery', {
+							direction: 'vertical',
+							loopFillGroupWithBlank: false,
+							navigation: {
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+							},
+						});
+					</script>
+
+				</div>
+
+				<a class="more" href="allcase.html">查看更多</a>
+			</div>
+
+				<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+			
+			<div class="bread">
+				<div class="b-box">
+					<h5>
+					<a href="index.html">首页</a>
+					<span> > </span>
+					<a href="###">全程代理</a>
+					<span> > </span>
+					<a class="red" href="###">出口代理</a>
+				</h5>
+				</div>
+			</div>
+			
+
+			<!--出口带理-->
+			<div class="jk-cont ck-cont">
+				<div class="cont-box clearfix">
+					<!--左侧导航-->
+					<ul class="box-lef z1" id="zgt">
+						<li class="yellow rotate">
+							<span>01</span>
+							<p class="round"><span class="line"></span></p>
+							<p class="kuang">出口服务流程 <span></span></p>
+						</li>
+						<li>
+							<span>02</span>
+							<p class="round"><span class="line"></span></p>
+							<p class="kuang">贸易方式 <span></span></p>
+						</li>
+						<li>
+							<span>03</span>
+							<p class="round"><span class="line"></span></p>
+							<p class="kuang">物流园区 <span></span></p>
+						</li>
+						<li>
+							<span>04</span>
+							<p class="round"></p>
+							<p class="kuang">出口加工区 <span></span></p>
+						</li>
+					</ul>
+					<!--出口服务流程-->
+					<div class="box-rig show1 zjh">
+						<h4 aos="fade-up"><p class="line"></p>出口代理服务内容</h4>
+						<ul aos="fade-up" class="dl-box clearfix">
+							<li>
+								<img src="images/jkic0_06.png" />
+								<h4>01</h4>
+								<p>代理出口, 包括：出口收汇；出口办证 等相关服务</p>
+							</li>
+							<li>
+								<img src="images/jkic0_03.png" />
+								<h4>02</h4>
+								<p>出口代开信用证, 接受TT、L/P等其他 结算方式</p>
+							</li>
+							<li>
+								<img src="images/jkic0_09.png" />
+								<h4>03</h4>
+								<p>代理客户办理出口核销及退税手续</p>
+							</li>
+							<li>
+								<img src="images/jkic0_18.png" />
+								<h4>04</h4>
+								<p>代理、代办各类出口相关批文、配额、 许可证</p>
+							</li>
+							<li>
+								<img src="images/jkic0_15.png" />
+								<h4>05</h4>
+								<p>代办出口商检，出口货物保险等</p>
+							</li>
+							<li>
+								<img src="images/jkic_14.png" />
+								<h4>06</h4>
+								<p>接受国外客户委托，代委托方寻找 国内卖家</p>
+							</li>
+						</ul>
+
+						<h4 aos="fade-up"><p class="line"></p>各类出口相关证件办理及贸易方式出口代理</h4>
+						<div aos="fade-up" class="no1 clearfix">
+							<div class="lef clearfix">
+								<div class="tit">
+									各类出口相关证件办理
+								</div>
+								<div class="content">
+									<p>各类产地证（CO，FormA/E/F)</p>
+									<p>国际商事认证及大使馆认证</p>
+									<p>出口商标和出口许可证</p>
+									<p>两用物项和技术出口许可证</p>
+									<p>医疗器械产品出口销售证明</p>
+									<p>软件产品出口合同备案</p>
+								</div>
+							</div>
+							<div class="rig">
+								<div class="tit">
+									各种贸易方式的出口代理
+								</div>
+								<div class="content">
+									<p>一般贸易和广告货样品出口</p>
+									<p>出境修理物品和租赁贸易</p>
+									<p>出口加工区及出口保税区业务</p>
+									<p>进/来料加工出口业务</p>
+									<p>暂时进出口货物及进出境展品</p>
+									<p>ATA单证册出口</p>
+								</div>
+							</div>
+						</div>
+
+						<h4 aos="fade-up"><p class="line"></p>如何委托我司出口</h4>
+						<div aos="fade-up" class="no2 clearfix">
+							<div class="lef">
+								<p><span><img src="images/jk6_03.jpg"/></span>首先您需要和您的外商（和国内用户）确定了出口订单</p>
+								<p><span><img src="images/jk6_03.jpg"/></span>我们签订出口代理合作备案录</p>
+								<p><span><img src="images/jk6_03.jpg"/></span>请您的外商将外汇款汇款至我司的账户或者让国外开具信用证到我司指 定的银行</p>
+								<p><span><img src="images/jk6_03.jpg"/></span>我司收到外汇款按照您的付款指令付款给供应商，同时供应商提供相应 的增值税专用发票给我司</p>
+
+							</div>
+							<p class="line"></p>
+							<div class="rig">
+								<p><span><img src="images/jk6_03.jpg"/></span>货物备好后，给予我司相关的货物信息（包括产品毛净重体积，收货人等），我 司排订舱，取得进仓库通知单后通知您发货</p>
+								<p><span><img src="images/jk6_03.jpg"/></span>等到货物出口后，由我司提供国外的清关单据给您，包括发票，箱单，提单等</p>
+								<p><span><img src="images/jk6_03.jpg"/></span>在业务结束后，我司按实际发生列出一切费用与您结算</p>
+							</div>
+						</div>
+
+						<h4 aos="fade-up"><p class="line"></p>进口代理流程</h4>
+						<div aos="fade-up" class="lunbo">
+							<img src="images/ckdb_03.jpg"/>
+						</div>
+
+					</div>
+
+					<!--贸易方式-->
+					<div class="box-rig zjh">
+						<h4><p class="line"></p>一般进出口货物的报关程序</h4>
+
+						<div class="ckmy01">
+							<p> 1、在进出境时缴纳进出口税费：一般进出口货物的收发货人按规定缴纳税费</p>
+							<p> 2、进出口时提交相关的许可证：需要提交许可证的，要提交许可证</p>
+							<p> 3、海关放行即办理结关手续</p>
+
+							<div class="ckmy01min">
+								<div class="ckmy01min-t clearfix">
+									<h3>进出口申报</h3>
+									<h3>配合查验</h3>
+									<h3>缴纳税费</h3>
+									<h3>提取或装运货物</h3>
+								</div>
+								<div class="ckmy01min-l clearfix">
+									<h3>
+										<span>一般申报的步骤</span>
+										<p>①准备申报单证</p>
+										<p>②申报前看货取样</p>
+										<p>③申报</p>
+										<p>④补充申报</p>
+										<p>⑤修改申报内容或撤销申报</p>
+									</h3>
+									<h3>
+										<span>一般申报的步骤</span>
+										<p>①准备申报单证</p>
+										<p>②申报前看货取样</p>
+										<p>③申报</p>
+										<p>④补充申报</p>
+										<p>⑤修改申报内容或撤销申报</p>
+									</h3>
+									<h3>
+										<span>一般申报的步骤</span>
+										<p>①准备申报单证</p>
+										<p>②申报前看货取样</p>
+										<p>③申报</p>
+										<p>④补充申报</p>
+										<p>⑤修改申报内容或撤销申报</p>
+									</h3>
+									<h3>
+										<span>一般申报的步骤</span>
+										<p>①准备申报单证</p>
+										<p>②申报前看货取样</p>
+										<p>③申报</p>
+										<p>④补充申报</p>
+										<p>⑤修改申报内容或撤销申报</p>
+									</h3>
+								</div>
+							</div>
+
+						</div>
+
+						<h4><p class="line"></p>出境修理货物的报关程序</h4>
+						<div class="ckmy02">
+							<h3>发货人在货物出境时，向海关提交维修合同或含有保修条款的原进口合同及申报出口需要的所有单证，办理出境申报手续。货物出境后，在境外维修的期限为出境之日起6个月，可以申请延长，延长的期限最长不超过6个月。货物复运进境时应当向海关申报在境外实际支付的修理费和材料费，由海关审查确定完税价格，计征进口关税和进口环节海关代征税。超过海关规定
+期限复运进境的，海关按一般进口货物计征进口关税和进口环节海关代征税。</h3>
+						</div>
+
+						<h4><p class="line"></p>暂时进出境货物的报关程序</h4>
+						<div class="ckmy03">
+							<h3>使用ATA单证册的暂准进出境货物</h3>
+							<div class="ckmy03min clearfix">
+								<div class="ckmy03tit">
+									<span>进出口申报</span>
+									<p>①进境申报</p>
+									<p>②出境申报</p>
+									<p>③异地复运出境、进境申报</p>
+									<p>④过境申报</p>
+								</div>
+								<div class="ckmy03tit">
+									<span>进出口申报</span>
+									<p>①进境申报</p>
+									<p>②出境申报</p>
+									<p>③异地复运出境、进境申报</p>
+									<p>④过境申报</p>
+								</div>
+								<div class="ckmy03tit">
+									<span>进出口申报</span>
+									<p>①进境申报</p>
+									<p>②出境申报</p>
+									<p>③异地复运出境、进境申报</p>
+									<p>④过境申报</p>
+								</div>
+							</div>
+							<h3>不使用ATA单证册报关的进出境展览品</h3>
+							<div class="ckmy03min clearfix">
+								<div class="ckmy03tit">
+									<span>进出境展览品的核销结关</span>
+									<p>①复运进出境</p>
+									<p>②转为正式进出口</p>
+									<p>③展览品放弃或赠送</p>
+									<p>④展览品毁坏、丢失、被窃</p>
+								</div>
+							</div>
+							<h3>不使用ATA单证册报关的进出境展览品</h3>
+							<div class="ckmy03min clearfix">
+								<h5>复运进出境</h5>
+								<h5>转为正式进出口</h5>
+								<h5>放弃</h5>
+								<h5>不可抗力</h5>
+							</div>
+						</div>
+
+						<h4><p class="line"></p>退运货物的报关程序</h4>
+						<div class="ckmy03 ckmy04">
+							<h3>退运货物是指原出口货物或进口货物因各种原因造成退运进口或者退运出口的货物。退运货物包括一般退运货物和直接退运货物</h3>
+							<div class="ckmy03min clearfix">
+								<div class="ckmy03tit">
+									<span>一般退运货物出口货物的海关手续</span>
+									<p>①报关 </p>
+									<p>②税收</p>
+								</div>
+								<div class="ckmy03tit">
+									<span>直接退运货物</span>
+									<p>①当事人申请直接退运的货物</p>
+									<p>②海关责令直接退运的货物</p>
+								</div>
+							</div>
+						</div>
+
+						<h4><p class="line"></p>租赁货物的报关程序</h4>
+						<div class="ckmy03 ckmy05">
+							<div class="ckmy03min clearfix">
+								<div class="ckmy03tit">
+									<span>金融租赁进口货物的报关程序</span>
+									<p>①按货物的完税价格缴纳税款 </p>
+									<p>②按租金分期缴纳税款</p>
+								</div>
+								<div class="ckmy03tit">
+									<span>经营租赁进口货物的报关程序</span>
+									<p>收货人或其代理人在租赁货物进口时应当向海关提供租赁合同，按照第一期应当支付的租金或者租金总额和按照货物的 实际价格分别填制报关单向海关申报，提供相关的进口许可证件和其他报关单证，按海关审查确定的第一期租金或租金 总额的完税价格计算税款数额，缴纳进口关税和进口代征税，海关按照货物的实际价格统计。 经营租赁进口货物租期届满之日起30日内，纳税义务人应当申请办结海关手续，将租赁进口货物复运出境或者办理留购、 续租的申报纳税手续。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--物流园区-->
+					<div class="box-rig zjh">
+						<h4><p class="line"></p>客户提供出口相关资料</h4>
+						<div class="ckmy01">
+							<p> 1、在进出境时缴纳进出口税费：一般进出口货物的收发货人按规定缴纳税费</p>
+							<p> 2、进出口时提交相关的许可证：需要提交许可证的，要提交许可证</p>
+							<p> 3、海关放行即办理结关手续</p>
+						</div>
+
+						<h4><p class="line"></p>打印进区凭单</h4>
+						<div class="ckmy02">
+							<h3>代理收到相关资料后先审核单证,然后至报关公司做电脑预录同时打印进区凭单</h3>
+						</div>
+
+						<h4><p class="line"></p>代理向保税区海关现场申报</h4>
+						<div class="ckmy01">
+							<p>1、报关委托书</p>
+							<p>2、出口报关单(海关作业联,货主留存联)</p>
+							<p>3、进区凭单</p>
+							<p>4、INV,P/L,Contract或P/O</p>
+							<p>5、手册,出口许可证,出境货物通关单(如需)</p>
+						</div>
+
+						<h4><p class="line"></p>保税区海关检查</h4>
+						<div class="ckmy01">
+							<p> 1、如果保税区海关不布控查验,则直接在进区凭单上盖验讫章,凭以办理货物进物流园区相关手续</p>
+							<p> 2、如果保税区海关布控查验,则现场拉出查验通知单,代理至物流园区安排查验计划</p>
+						</div>
+
+						<h4><p class="line"></p>货物送至物流园区卡口验核或查验</h4>
+						<div class="ckmy01">
+							<p>1、进区凭单(保税区海关已盖验讫章)</p>
+							<p>2、出口报关单(货主留存联)</p>
+							<p>3、INV,P/L,Contract或P/O</p>
+						</div>
+
+						<h4><p class="line"></p>货物入库</h4>
+						<div class="ckmy01">
+							<p> 整个进园区操作时间一个工作日</p>
+						</div>
+
+					</div>
+
+					<!--出口加工区-->
+					<div class="box-rig zjh">
+						<h4><p class="line"></p>作业流程</h4>
+						<div class="ckfw01">
+							<h3>1、实际进境通关</h3>
+							<div class="ckfw01min clearfix">
+								<div class="item">
+									<h4>01、提前报关转关模式</h4>
+									<h5>填制进境货物备案清单 → 办理转关运输申报手续 → 口岸海关办理转关运输手续 → 审单中心审核 → 主管海关接单审核 → 卡口查验 → 核销口岸海关签发的转关联系作业单、单证放行 → 实物放行 → 结关退单 </h5>
+								</div>
+								<div class="item">
+									<h4>01、提前报关转关模式</h4>
+									<h5>填制进境货物备案清单 → 办理转关运输申报手续 → 口岸海关办理转关运输手续 → 审单中心审核 → 主管海关接单审核 → 卡口查验 → 核销口岸海关签发的转关联系作业单、单证放行 → 实物放行 → 结关退单 </h5>
+								</div>
+							</div>
+							<h3>1、实际进境通关</h3>
+							<div class="ckfw01min ckfw02min clearfix">
+								<div class="item">
+									<h4>01、提前报关转关模式</h4>
+									<h5>填制出境货物备案清单 → 审单中心审核 → 主管海关接单审核 → 卡口查验 → 审核转关电子数据，向口岸海关签发转关联系作业单，制作关封，对监管车辆进
+行施封 → 货物实物放行 → 货物在口岸离境 → 结关退单 </h5>
+								</div>
+							</div>
+
+							<h3>1、实际进境通关</h3>
+							<div class="ckfw01min ckfw02min clearfix">
+								<div class="item">
+									<h4>01、提前报关转关模式</h4>
+									<h5>填制出境货物备案清单 → 审单中心审核 → 主管海关接单审核 → 卡口查验 → 审核转关电子数据，向口岸海关签发转关联系作业单，制作关封，对监管车辆进
+行施封 → 货物实物放行 → 货物在口岸离境 → 结关退单 </h5>
+								</div>
+							</div>
+
+							<h3>1、实际进境通关</h3>
+							<div class="ckfw01min ckfw02min clearfix">
+								<div class="item">
+									<h4>01、提前报关转关模式</h4>
+									<h5>填制出境货物备案清单 → 审单中心审核 → 主管海关接单审核 → 卡口查验 → 审核转关电子数据，向口岸海关签发转关联系作业单，制作关封，对监管车辆进
+行施封 → 货物实物放行 → 货物在口岸离境 → 结关退单 </h5>
+								</div>
+							</div>
+						</div>
+
+						<h4><p class="line"></p>所需单证</h4>
+						<div class="ckmy01">
+							<p>报关单、进出口许可证件、商业和运输单证如提单、运单、商业发票、装箱单及海关认为必要时交验的订货合同、《原产地证书》等有关单证或资料，准予保税 缓税或减免税的批准证件，如《加工贸易手册》、《进出口货物征免税证明》等，以及其他海关认为所需要的单证。
+							</p>
+
+						</div>
+					</div>
+
+					<!--左侧导航tab切换-->
+					<script>
+						$(".box-lef li").click(function() {
+							var index = $(this).index();
+							$(this).addClass("yellow").siblings().removeClass("yellow");
+							$(this).addClass("rotate").siblings().removeClass("rotate");
+							$(".zjh").eq(index).fadeIn().siblings(".zjh").fadeOut();
+							$("html,body").animate({
+								scrollTop: 0
+							},300)
+						})
+					</script>
+					<!--使左侧导航浮动-->
+					<script>
+						window.onscroll = function() {
+							var t = document.documentElement.scrollTop || document.body.scrollTop;
+							var div2 = document.getElementById("zgt");
+
+							if(t >= 140) {
+								div2.className = "g1";
+							} else {
+								div2.className = "z1";
+							}
+						}
+					</script>
+				</div>
+
+			</div>
+
+			<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>

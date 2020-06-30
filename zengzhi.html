@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="ZJH" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/web.css" />
+		<link rel="stylesheet" type="text/css" href="css/suge.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/navga.css" />
+		<link rel="stylesheet" type="text/css" href="css/aos.css" />
+		<script type="text/javascript" src="js/aos.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/navga.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<title></title>
+
+	</head>
+	<!--[if lte IE 8]>
+	<div class="web-ie2018">
+   <dl>
+      <h4>上海松一互联网设计官方热线：400 820 3965</h4> 
+	  <h3>请升级浏览器版本</h3>
+	  <h4>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</h4>
+	  <dd>
+	    <a href="//www.google.com/chrome" target="_blank"><img src="/style/images/web-ie-icon1.jpg"><span>Chrome</span></a>
+		<a href="//www.firefox.com/" target="_blank"><img src="/style/images/web-ie-icon2.jpg"><span>Firefox</span></a>
+		<a href="//www.apple.com/safari/" target="_blank"><img src="/style/images/web-ie-icon3.jpg"><span>Safari</span></a>
+		<a href="//www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"><img src="/style/images/web-ie-icon4.jpg"><span>Edge</span></a>
+	  </dd>
+   </dl>
+</div>
+
+<![endif]-->
+
+	<body class="clearfix drawer drawer--right">
+		<div class="r-box">
+
+			<div class="r-nav">
+				<span class="cai"><img src="images/navs_03.png"/></span>
+				<span class="tuichu1"><img src="images/tuichu_03.png"/></span>
+			</div>
+
+			<a class="user" href="###"><span><img src="images/index_10.jpg"/></span></a>
+			<span class="tuichu2"><img src="images/tuichu_03.png"/></span>
+		</div>
+
+		<div class="l-box">
+	
+			<a href="index.html" class="top">
+				<img src="images/icon_03.png" />
+			</a>
+
+			<!--nav导航页-->					
+			<div class="nav clearfix">
+				<div class="lef"></div>
+				<div class="rig">
+					<a class="in-logo" href="index.html"><img src="images/inlogo_03.png"/></a>
+					<a class="in-sear" href="###"><img src="images/sear_03.png"/></a>
+					<ul>
+						<li>
+							<a class="in-tit" href="###s">国际海运</a>
+							
+							<div class="in-txt">
+								<a href="zhengxiang.html">整箱 & 拼箱</a>
+								<a href="tezhong.html">OOG & 特种柜</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">进口清关</a>
+							
+							<div class="in-txt">
+								<a href="###">一般物品</a>
+								<a href="###">展会物流</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">全程代理</a>
+							
+							<div class="in-txt">
+								<a href="jinkou.html">进口代理</a>
+								<a href="chukou.html">出口代理</a>
+							</div>
+						</li>
+						<li>
+							<a class="in-tit" href="jionus.html">加入我们</a>
+						</li>
+						<li>
+							<a class="in-tit" href="allcase.html">经典案例</a>
+						</li>
+						<li>
+							<a class="in-tit" href="###s">关于速格</a>
+							
+							<div class="in-txt">
+								<a href="about.html">公司简介 </a>
+								<a href="callus.html">联系我们</a>
+							</div>
+						</li>						
+					</ul>
+					
+					<a class="in-login" href="###">Login <span><img src="images/logicon_03.png"/></span></a>
+					<a class="in-other" href="###">您想用其他帐户登录，还是忘记了密码？</a>
+				</div>
+					
+			</div>
+					
+			<!--nav登录页-->
+			<div class="login">
+				<a class="inlogo" href="###"><img src="images/inlogo_03.png" /></a>
+				<form>
+					<h4><span><img src="images/user-icon_03.png"/></span>用户登录</h4>
+					<div class="username">
+						<span>账号 : </span>
+						<input type="text" value="" />
+					</div>
+					<div class="password">
+						<span>密码 : </span>
+						<input type="password" value="" />
+					</div>
+					<button>登录</button>
+				</form>
+				<a class="gw" href="###">www.surgior.com</a>
+			</div>
+
+			<script>
+				$(".user").click(function(){
+					$(".login").animate({left:0},300);
+					$(this).hide().next(".tuichu2").show();
+					$(".r-nav").hide();
+				})
+				
+				$(".tuichu2").click(function(){
+					$(".login").animate({left:'100%'},300);
+					$(this).hide().prev(".user").show();
+					$(".r-nav").show();
+				})
+				
+				$(".cai").click(function(){
+					$(".nav").animate({left:0},300);
+					$(this).hide().next(".tuichu1").show();
+					$(".user").hide();
+				})
+				$(".tuichu1").click(function(){
+					$(".nav").animate({left:'100%'},300);
+					$(this).hide().prev(".cai").show();
+					$(".user").show();
+				})
+			</script>
+
+			<!--top-->
+
+			<div class="bread">
+				<div class="b-box">
+					<h5>
+					<a href="index.html">首页</a>
+					<span> > </span>
+					<a class="red" href="###">增值服务</a>					
+				</h5>
+				</div>
+			</div>
+
+			<div class="zz-cont">
+				<ul class="clearfix">
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>01</h4>
+							<p class="line"></p>
+							<p>H．S．免费归类</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>02</h4>
+							<p class="line"></p>
+							<p>商业发票</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>03</h4>
+							<p class="line"></p>
+							<p>能效认证代办</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>04</h4>
+							<p class="line"></p>
+							<p>原产证代办</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>05</h4>
+							<p class="line"></p>
+							<p>机电证代办</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>06</h4>
+							<p class="line"></p>
+							<p>进口食品标签审核代办</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>07</h4>
+							<p class="line"></p>
+							<p>化妆品标签审核代办</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+					<li aos="fade-up">
+						<img src="images/zz1_03.jpg" />
+						<div class="li-box">
+							<h4>08</h4>
+							<p class="line"></p>
+							<p>展览品留购</p>
+						</div>
+						<p class="more">查看详情<span class="icon-r"><img src="images/ca-ic_04.png"/></span></p>
+						<div class="orange">
+							<div class="o-cont">
+								<h5 class="clearfix">
+									<p>所需文件：</p>
+									<p>
+										<span> 1．技术图纸</span>
+										<span>2．商业发票</span>
+										<span>3．情况说明</span>
+										<span>4．委托书</span>
+									</p>									 
+								</h5>
+								<p>办理时间： 1工作日</p>
+								<p>代办费用： 300/单</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+			<!--footer-->
+			<div class="footer">
+				<div class="ft-box clearfix">
+					<ul class="clearfix">
+						<li>
+
+							<h5><a href="###">国际海运</a></h5>
+							<a href="zhengxiang.html">整箱&拼箱</a>
+							<a href="tezhong.html">OOG &特种柜</a>
+						</li>
+						<li>
+
+							<h5><a href="###">进口清关</a></h5>
+							<a href="###">一般物品</a>
+							<a href="###">展会物流</a>
+						</li>
+						<li>
+
+							<h5><a href="###">全程代理</a></h5>
+							<a href="jinkou.html">进口代理</a>
+							<a href="chukou.html">出口代理</a>
+
+						</li>
+						<li>
+							<h5><a href="jionus.html">加入我们</a></h5>
+						</li>
+						<li>
+
+							<h5><a href="allcase.html">经典案例</a></h5>
+						</li>
+						<li>
+							<h5><a href="###">关于速格</a></h5>
+							<a href="about.html">公司简介 </a>
+							<a href="callus.html">联系我们</a>
+						</li>
+					</ul>
+
+					<div class="ft-down">
+						<a class="a-left" href="http://www.beian.miit.gov.cn">沪ICP备19018273号-1</a>
+						<p class="copyright">@ 2019 速格（上海）国际物流有限公司 版权所有</p>
+						<a class="a-rigt" href="http://www.songyi.net/">Powered by SE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-expo',
+				once: true,
+				/**只运行一次**/
+				disable: window.innerWidth < 1024 /**小于1024像素则不执行动画**/
+			})
+		</script>
+	</body>
+
+</html>
